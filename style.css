@@ -103,7 +103,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
 }
 
 .d-bloc button:hover {
@@ -679,11 +679,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniereredim.jpg");
+    background-image: url("img/la-chouette-agence-banniereredim.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentationredim.jpg");
+    background-image: url("img/image-de-presentationredim.webp");
 }
 
 @media (max-width: 1024px) {
@@ -708,8 +708,7 @@ h4 {
 
 @media (min-width: 768px) {
     .site-navigation {
-        position: fixed;
-        top: 30px;
+        position: relative;
         right: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
@@ -777,6 +776,7 @@ h4 {
     .logoheader {
         width: 25%;
         padding: 0%;
+        margin-top: 10%;
     }
     .logo {
         width: 20%;
