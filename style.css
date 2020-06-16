@@ -532,6 +532,7 @@ a {
 
 .hero-bloc-text {
     font-size: 350%;
+    text-shadow: 1px 2px 2px black;
 }
 
 .hero-bloc-text-sub {
@@ -649,6 +650,7 @@ h4 {
 
 .ltc-white {
     color: #FFFFFF!important;
+    text-shadow: 1px 2px 2px black;
 }
 
 .ltc-brun {
