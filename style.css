@@ -103,6 +103,8 @@ a:hover {
 }
 
 .texture-paper::before {
+    content: "";
+    position: absolute;
     background: url("img/texture-paper.webp");
 }
 
@@ -529,7 +531,7 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 280%;
+    font-size: 350%;
 }
 
 .hero-bloc-text-sub {
