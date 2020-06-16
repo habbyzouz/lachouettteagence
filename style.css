@@ -579,6 +579,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto;
+    padding: 5%;
 }
 
 h3 {
