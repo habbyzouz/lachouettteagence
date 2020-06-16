@@ -709,6 +709,7 @@ h4 {
 @media (min-width: 768px) {
     .site-navigation {
         position: relative;
+        bottom: 20px;
         right: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
@@ -776,7 +777,6 @@ h4 {
     .logoheader {
         width: 25%;
         padding: 0%;
-        margin-top: 10%;
     }
     .logo {
         width: 20%;
