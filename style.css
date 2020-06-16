@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background: #FFFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -313,7 +313,7 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #FFF;
+    color: #FFFF;
     background: rgba(0, 0, 0, .3);
 }
 
@@ -397,7 +397,7 @@ button {
     font-size: 16px;
     opacity: 1;
     font-weight: bold;
-    color: #FFF;
+    color: #ffffff;
 }
 
 a[data-lightbox] {
@@ -566,7 +566,7 @@ p {
 
 .cta-hero-brun {
     margin-top: 22px;
-    color: #A46B38!important;
+    color: #823900!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -633,7 +633,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #A46B38;
+    background: #823900;
 }
 
 .btn-atomic-jaune {
@@ -641,7 +641,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #A46B38!important;
+    background: #823900!important;
     color: #FFFFFF!important;
 }
 
@@ -650,7 +650,7 @@ h4 {
 }
 
 .ltc-brun {
-    color: #A46B38!important;
+    color: #823900!important;
 }
 
 .ltc-white:hover {
