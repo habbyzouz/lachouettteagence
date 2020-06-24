@@ -82,10 +82,9 @@ SetEnv no-gzip
   # CSS and JavaScript
   ExpiresByType text/css                  "access plus 1 day"
   ExpiresByType application/javascript    "access plus 1 day"
-  <IfModule mod_headers.c>
-    Header append Cache-Control "public"
-  </IfModule>
+
 </IfModule>
+
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
  <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
