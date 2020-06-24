@@ -39,6 +39,20 @@
   </IfModule>
 </IfModule>
 
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# You may need RewriteBase on some servers
+#RewriteBase /min
+
+# rewrite URLs like "/min/f=..." to "/min/?f=..."
+RewriteRule ^([bfg]=.*) index.php?$1 [L,NE]
+</IfModule>
+<IfModule mod_env.c>
+# In case AddOutputFilterByType has been added
+SetEnv no-gzip
+</IfModule>
+
 <IfModule mod_expires.c>
   ExpiresActive on
   # Perhaps better to whitelist expires rules? Perhaps.
@@ -46,7 +60,7 @@
   # cache.appcache needs re-requests in FF 3.6 (thanks Remy ~Introducing HTML5)
   ExpiresByType text/cache-manifest       "access plus 0 seconds"
   # Your document html
-  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/html                 "access plus 1 month"
   # Data
   ExpiresByType text/xml                  "access plus 0 seconds"
   ExpiresByType application/xml           "access plus 0 seconds"
@@ -55,7 +69,7 @@
   ExpiresByType application/rss+xml       "access plus 1 hour"
   ExpiresByType application/atom+xml      "access plus 1 hour"
   # Favicon (cannot be renamed)
-  ExpiresByType image/x-icon              "access plus 1 week"
+  ExpiresByType image/x-icon              "access plus 1 year"
   # Media: images, video, audio
   ExpiresByType image/gif                 "access plus 1 year"
   ExpiresByType image/png                 "access plus 1 year"
@@ -74,8 +88,8 @@
   ExpiresByType image/svg+xml             "access plus 1 month"
   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
   # CSS and JavaScript
-  ExpiresByType text/css                  "access plus 1 year"
-  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType text/css                  "access plus 1 day"
+  ExpiresByType application/javascript    "access plus 1 day"
   <IfModule mod_headers.c>
     Header append Cache-Control "public"
   </IfModule>
